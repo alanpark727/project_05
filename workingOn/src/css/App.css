@@ -1,0 +1,13 @@
+.App {
+  text-align: center;
+}
+
+.logo {
+  width: 130px;
+  height: 100%;
+}
+
+.navbar {
+  height: 100px;
+  align-items: center;
+}
