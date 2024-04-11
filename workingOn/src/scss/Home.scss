@@ -5,7 +5,7 @@ body {
 }
 
 body {
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif, 'Noto Sans KR';
   font-size: 14px;
   color: #000;
   margin: 0;
@@ -44,3 +44,20 @@ h3 {
   text-align: center;
   margin: 30px 0px;
 }
+
+h5 {
+  border-bottom: 1px solid #eaeaea;
+  padding: 0 0 20px;
+  font-size: 14px;
+  margin: 0 0 20px;
+  font-weight: 700;
+}
+
+.cont_inner {
+  padding: 40px;
+  color: #777;
+  h5 {
+    color: #444;
+  }
+}
+

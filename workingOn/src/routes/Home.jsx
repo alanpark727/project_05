@@ -87,7 +87,7 @@ const Home = (props) => {
       <Container>
         <Row>
           {newItem.map((value, i)=>
-            <Product newItem={value} key={i} i={i} no={no} />)
+            <Product newItem={value} key={i} i={i} no={no} j={0} />)
           }
         </Row>
       </Container>

@@ -1,6 +1,5 @@
 import React from 'react'
-import { useNavigate } from 'react-router-dom'
-import { Container, Row, Col } from 'react-bootstrap'
+import { Container, Row} from 'react-bootstrap'
 import Product from '../components/Product'
 
 const Newarrival = (props) => {
@@ -10,7 +9,7 @@ const Newarrival = (props) => {
         <Row>
             {
                 newItem.map((value,i) => 
-                <Product newItem={value} key={i} i={i} no={no} />)
+                <Product newItem={value} key={i} i={i} no={no} j={0} />)
             }
         </Row>
     </Container>

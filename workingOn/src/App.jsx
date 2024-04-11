@@ -5,16 +5,16 @@ import {Routes, Route, Navigate, useNavigate, Outlet} from 'react-router-dom';
 import Home from './routes/Home';
 import Footer from './components/Footer';
 import data0 from './data_new';
-import data2 from './data_hoodie';
 import { useState } from 'react';
 import Newarrival from './routes/Newarrival';
 import Detail from './routes/Detail';
-import data4 from './data_sale';
+import Worlds from './routes/Worlds';
+import data3 from './data_worlds';
 
 
 function App() {
   const [newItem,setNewItem] = useState(data0)
-  const [sale,setSale] = useState(data4)
+  const [worlds,setWorlds] = useState(data3)
   const [no, setNo] = useState([0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19]);
   const navigate = useNavigate();
 
@@ -63,7 +63,8 @@ function App() {
         <Route path='*' element={<div><h2>404</h2>Page Not Found</div>} />
         <Route path='/newarrival/' element={<div><Newarrival newItem={newItem} setNewItem={setNewItem} no={no} setNo={setNo}/></div>} />
         <Route path='/newarrival/detail/:id' element={<Detail newItem={newItem} />} />
-        <Route path='/worlds2023/detail/:id' />
+        <Route path='/worlds2023/' element={<div><Worlds newItem={worlds} setNewItem={setWorlds} no={no} setNo={setNo} /></div>}/>
+        <Route path='/worlds2023/detail/:id' element={<Detail newItem={worlds} />}/>
       </Routes>
 
       <Footer  />

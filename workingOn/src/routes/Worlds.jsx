@@ -1,8 +1,18 @@
 import React from 'react'
+import { Container, Row } from 'react-bootstrap'
+import Product from '../components/Product'
 
-const Worlds = () => {
+const Worlds = (props) => {
+    const {newItem, no, i} = props;
   return (
-    <div>Worlds</div>
+    <Container>
+        <Row>
+            {
+                newItem.map((value,i) => 
+                <Product newItem={value} key={i} i={i} no={no} j={1} />)
+            }
+        </Row>
+    </Container>
   )
 }
 
