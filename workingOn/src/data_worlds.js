@@ -47,7 +47,6 @@ let data3 = [
         price: "89,000",
         category: "worlds",
         detailUrl: "/img/worlds/worlds05_d.jpg",
-        detailUrl2: "/img/worlds/worlds05_d2.jpg",
     },
 
     {
@@ -138,7 +137,6 @@ let data3 = [
         price: "149,000",
         category: "worlds",
         detailUrl: "/img/worlds/worlds14_d.jpg",
-        detailUrl2: "/img/worlds/worlds14_d2.jpg",
     },
 
     {
@@ -149,7 +147,6 @@ let data3 = [
         price: "49,000",
         category: "worlds",
         detailUrl: "/img/worlds/worlds15_d.jpg",
-        detailUrl2: "/img/worlds/worlds15_d2.jpg",
     },
 
     {
@@ -160,7 +157,6 @@ let data3 = [
         price: "109,000",
         category: "worlds",
         detailUrl: "/img/worlds/worlds16_d.jpg",
-        detailUrl2: "/img/worlds/worlds16_d2.jpg",
     },
 
     {
@@ -171,7 +167,6 @@ let data3 = [
         price: "149,000",
         category: "worlds",
         detailUrl: "/img/worlds/worlds17_d.jpg",
-        detailUrl2: "/img/worlds/worlds17_d2.jpg",
     },
 
     {
@@ -182,8 +177,6 @@ let data3 = [
         price: "89,000",
         category: "worlds",
         detailUrl: "/img/worlds/worlds18_d.jpg",
-        detailUrl2: "/img/worlds/worlds18_d2.jpg",
-        detailUrl3: "/img/worlds/worlds18_d3.jpg",
     },
 
     {
@@ -194,7 +187,6 @@ let data3 = [
         price: "35,000",
         category: "worlds",
         detailUrl: "/img/worlds/worlds19_d.jpg",
-        detailUrl2: "/img/worlds/worlds19_d2.jpg",
     },
 
     {

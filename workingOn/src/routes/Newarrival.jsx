@@ -6,6 +6,8 @@ const Newarrival = (props) => {
     const {newItem, no, i} = props;
   return (
     <Container>
+        <h2>NEW ARRIVAL</h2>
+        <p>T1의 신상품을 만나보세요</p>
         <Row>
             {
                 newItem.map((value,i) => 

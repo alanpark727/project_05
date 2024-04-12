@@ -4,8 +4,9 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
+import 'swiper/css/effect-cards';
 import '../scss/Home.scss';
-import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+import { Autoplay, Pagination, Navigation, EffectCards } from 'swiper/modules';
 import styled from 'styled-components';
 import { Container, Row, Col, Button } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom'
@@ -29,6 +30,12 @@ const Saleitems = styled.div`
 const Worlds = styled.div`
   margin: 100px auto;
   text-align: center;
+`
+const Uniform = styled.div`
+  background-image: url('/img/home_bg.jpg');
+  background-size: 100%;
+  background-position: center;
+  background-attachment: fixed;
 `
 
 
@@ -93,7 +100,8 @@ const Home = (props) => {
       </Container>
 
       <Worlds>
-        <h2><span onClick={()=>{navigate('/worlds2023/')}}>T1 2023 Worlds Collection</span></h2>
+        <h2><span onClick={()=>{navigate('/worlds2023/')}}>T1 2023 WORLDS COLLECTION</span></h2>
+        <p>2023 WORLDS CHAMPION T1</p>
       </Worlds>
 
       <Swiper
@@ -146,9 +154,124 @@ const Home = (props) => {
         </SwiperSlide>
       </Swiper>
 
-      <div className='uniform'>
-        <h2>T1 OFFICIAL UNIFORM</h2>
-      </div>
+      <Uniform className='uniform'>
+        <h2><span>T1 OFFICIAL UNIFORM</span></h2>
+        <Container>
+          <Row>
+            <Col md={6}>
+              <img src="/img/inner.jpg" alt="" width={'100%'} />
+            </Col>
+            <Col md={6}>
+              <h4>T1 OFFICIAL UNIFORM</h4>
+              <p>T1 유니폼을 입고 <br />T1의 우승을 응원해주세요!</p>
+              <Button variant='danger'>유니폼 구매</Button>
+            </Col>
+          </Row>
+        </Container>
+      </Uniform>
+
+      <Container>
+        <Row>
+          <Col md={6}>
+            <Swiper
+              effect={'cards'}
+              grabCursor={true}
+              loop={true}
+              modules={[EffectCards]}
+              className="cardSwiper"
+            >
+              <SwiperSlide>
+                <img src="/img/shirts/j01.jpg" alt="" />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src="/img/shirts/j02.jpg" alt="" />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src="/img/shirts/j03.jpg" alt="" />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src="/img/shirts/j04.png" alt="" />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src="/img/shirts/ts01.jpg" alt="" />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src="/img/shirts/ts02.jpg" alt="" />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src="/img/shirts/ts03.jpg" alt="" />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src="/img/shirts/ts04.png" alt="" />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src="/img/shirts/ts05.jpg" alt="" />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src="/img/shirts/ts06.jpg" alt="" />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src="/img/shirts/ts07.jpg" alt="" />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src="/img/shirts/ts08.jpg" alt="" />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src="/img/shirts/ts09.jpg" alt="" />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src="/img/shirts/ts10.png" alt="" />
+              </SwiperSlide>
+            </Swiper>
+          </Col>
+          <Col md={6}>
+            <Swiper
+              effect={'cards'}
+              grabCursor={true}
+              loop={true}
+              modules={[EffectCards]}
+              className="cardSwiper"
+            >
+              <SwiperSlide>
+                <img src="/img/hoodie/h01.jpg" alt="" />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src="/img/hoodie/h02.jpg" alt="" />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src="/img/hoodie/h03.jpg" alt="" />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src="/img/hoodie/h04.png" alt="" />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src="/img/hoodie/sws01.jpg" alt="" />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src="/img/hoodie/sws02.jpg" alt="" />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src="/img/hoodie/sws03.jpg" alt="" />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src="/img/hoodie/sws04.jpg" alt="" />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src="/img/hoodie/sws05.jpg" alt="" />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src="/img/hoodie/sws06.jpg" alt="" />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src="/img/hoodie/sws07.jpg" alt="" />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src="/img/hoodie/sws08.jpg" alt="" />
+              </SwiperSlide>
+            </Swiper>
+          </Col>
+        </Row>
+      </Container>
 
 
       <Saleitems>

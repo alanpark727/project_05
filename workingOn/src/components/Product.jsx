@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom';
 const Product = (props) => {
     const {newItem, i, no, id, j} = props;
     const navigate = useNavigate();
-    const navigateTarget = ['/newarrival','/worlds2023']
+    const navigateTarget = ['/newarrival','/worlds2023','/uniforms']
 
   return (
     <Col md={3} onClick={()=>{navigate(navigateTarget[j]+'/detail/'+ no[i])}}>

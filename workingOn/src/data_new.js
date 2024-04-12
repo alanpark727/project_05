@@ -6,8 +6,7 @@ let data0 = [
         code: "P00000OO",
         price: "65,000",
         category: "new",
-        detailUrl: "/img/new/h01_d.jpg",
-        detailUrl2: "/img/new/h01_d2.jpg",
+        detailUrl: "/img/new/h01_d.png",
     },
 
     {
@@ -17,8 +16,7 @@ let data0 = [
         code: "P00000ON",
         price: "65,000",
         category: "new",
-        detailUrl: "/img/new/h02_d.jpg",
-        detailUrl2: "/img/new/h02_d2.jpg",
+        detailUrl: "/img/new/h02_d.png",
     },
 
     {
@@ -29,7 +27,6 @@ let data0 = [
         price: "65,000",
         category: "new",
         detailUrl: "/img/new/h03_d.jpg",
-        detailUrl2: "/img/new/h03_d2.jpg",
     },
 
     {
@@ -40,7 +37,6 @@ let data0 = [
         price: "59,000",
         category: "new",
         detailUrl: "/img/new/sws01_d.jpg",
-        detailUrl2: "/img/new/sws01_d2.jpg",
     },
 
     {
@@ -51,7 +47,6 @@ let data0 = [
         price: "59,000",
         category: "new",
         detailUrl: "/img/new/sws02_d.jpg",
-        detailUrl2: "/img/new/sws02_d2.jpg",
     },
 
     {
@@ -62,7 +57,6 @@ let data0 = [
         price: "5,500",
         category: "new",
         detailUrl: "/img/new/new01_d.jpg",
-        detailUrl2: "/img/new/new01_d2.jpg",
     },
 
     {
@@ -73,8 +67,6 @@ let data0 = [
         price: "20,000",
         category: "new",
         detailUrl: "/img/new/new02_d.jpg",
-        detailUrl2: "/img/new/new02_d2.jpg",
-        detailUrl3: "/img/new/new02_d3.jpg",
     },
 
     {
@@ -85,7 +77,6 @@ let data0 = [
         price: "65,000",
         category: "new",
         detailUrl: "/img/new/sws03_d.jpg",
-        detailUrl2: "/img/new/sws03_d2.jpg",
     },
 
     {
@@ -96,7 +87,6 @@ let data0 = [
         price: "65,000",
         category: "new",
         detailUrl: "/img/new/sws04_d.jpg",
-        detailUrl2: "/img/new/sws04_d2.jpg",
     },
 
     {
@@ -107,7 +97,6 @@ let data0 = [
         price: "65,000",
         category: "new",
         detailUrl: "/img/new/sws05_d.jpg",
-        detailUrl2: "/img/new/sws05_d2.jpg",
     },
 
     {
@@ -128,8 +117,6 @@ let data0 = [
         price: "20,000",
         category: "new",
         detailUrl: "/img/new/new04_d.jpg",
-        detailUrl2: "/img/new/new04_d2.jpg",
-        detailUrl3: "/img/new/new04_d3.jpg"
     },
 
     {
@@ -140,7 +127,6 @@ let data0 = [
         price: "11,000",
         category: "new",
         detailUrl: "/img/new/new05_d.jpg",
-        detailUrl2: "/img/new/new05_d2.jpg",
     },
 
     {
@@ -171,7 +157,6 @@ let data0 = [
         price: "18,000",
         category: "new",
         detailUrl: "/img/new/new08_d.jpg",
-        detailUrl2: "/img/new/new08_d2.jpg",
     },
 
     {
@@ -182,8 +167,6 @@ let data0 = [
         price: "15,000",
         category: "new",
         detailUrl: "/img/new/new09_d.jpg",
-        detailUrl2: "/img/new/new09_d2.jpg",
-        detailUrl3: "/img/new/new09_d3.jpg",
     },
 
     {
@@ -194,8 +177,6 @@ let data0 = [
         price: "75,000",
         category: "new",
         detailUrl: "/img/new/new10_d.jpg",
-        detailUrl2: "/img/new/new10_d2.jpg",
-        detailUrl3: "/img/new/new10_d3.jpg",
     },
 
     {
