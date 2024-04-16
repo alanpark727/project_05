@@ -12,6 +12,7 @@ import Worlds from './routes/Worlds';
 import data3 from './data_worlds';
 import data5 from './data_uniform';
 import Uniform from './routes/Uniform';
+import Cart from './routes/Cart';
 
 
 function App() {
@@ -48,12 +49,12 @@ function App() {
               <NavDropdown.Item>POSTERS</NavDropdown.Item>
             </NavDropdown>
             <Nav.Link onClick={()=>{navigate('/collaboration/')}}>COLLABORATION</Nav.Link>
-            <Nav.Link onClick={()=>{navigate('/sale/')}}>SALE</Nav.Link>
+            <Nav.Link>SALE</Nav.Link>
           </Nav>
           <Nav>
-            <Nav.Link href="#acount">Acount</Nav.Link>
-            <Nav.Link href="#search">search</Nav.Link>
-            <Nav.Link eventKey={2} href="#memes">
+            <Nav.Link>Account</Nav.Link>
+            <Nav.Link>Search</Nav.Link>
+            <Nav.Link onClick={()=>{navigate('/cart/')}}>
               Cart
             </Nav.Link>
           </Nav>
@@ -70,6 +71,7 @@ function App() {
         <Route path='/worlds2023/detail/:id' element={<Detail newItem={worlds} />}/>
         <Route path='/uniforms/' element={<div><Uniform newItem={uniform} setNewItem={setUniform} no={no} setNo={setNo} /></div>} />
         <Route path='/uniforms/detail/:id' element={<Detail newItem={uniform} />}/>
+        <Route path='/cart' element={<div><Cart /></div>} />
       </Routes>
 
       <Footer  />

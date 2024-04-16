@@ -3,6 +3,8 @@ import { Container, Row, Col, Button } from 'react-bootstrap'
 import React, { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 import TabContent from '../components/TabContent';
+import { addItem } from '../store';
+import { useDispatch } from 'react-redux'
 import '../scss/Detail.scss';
 
 
@@ -10,7 +12,9 @@ const Detail = (props) => {
     const {newItem} = props;
     let {id} = useParams();
     let [tab, setTab] = useState(0);
+    let dispatch = useDispatch()
     const [count, setCount] = useState(0);
+
 
   return (
       <Container className='detail_wrap'>
@@ -22,7 +26,9 @@ const Detail = (props) => {
             <Col md={6} className='product_info'>
                 <div className='like'>
                     <img src="/img/like_btn_bg_left2.png" alt="" />
-                    <button onClick={()=>{count++}}>LIKE <span>0</span></button>
+                    <button onClick={()=>{
+                        setCount(count++)
+                    }}>LIKE <span>0</span></button>
                     <img src="/img/like_btn_bg_right2.png" alt="" />
                 </div>
                 <h4 className='pt-5'>{newItem[id].title}</h4>
@@ -33,7 +39,10 @@ const Detail = (props) => {
                 </div>
                 <Row className='bottom_btn'>
                     <Col md={6} className='d-grid'>
-                        <Button variant='light'>장바구니</Button>
+                        <Button variant='light' onClick={()=>{
+                            dispatch(addItem({ id: newItem[id].id, imgUrl: newItem[id].imgUrl, item: newItem[id].title, price: newItem[id].price, amount: 1}))
+                            alert('장바구니에 상품이 담겼습니다.')
+                        }}>장바구니</Button>
                     </Col>
                     <Col md={6} className='d-grid'>
                         <Button variant='light'>관심상품</Button>

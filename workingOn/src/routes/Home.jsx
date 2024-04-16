@@ -164,114 +164,117 @@ const Home = (props) => {
             <Col md={6}>
               <h4>T1 OFFICIAL UNIFORM</h4>
               <p>T1 유니폼을 입고 <br />T1의 우승을 응원해주세요!</p>
-              <Button variant='danger'>유니폼 구매</Button>
+              <Button variant='danger' onClick={()=>{navigate('/uniforms/')}}>유니폼 구매</Button>
             </Col>
           </Row>
         </Container>
       </Uniform>
 
-      <Container>
-        <Row>
-          <Col md={6}>
-            <Swiper
-              effect={'cards'}
-              grabCursor={true}
-              loop={true}
-              modules={[EffectCards]}
-              className="cardSwiper"
-            >
-              <SwiperSlide>
-                <img src="/img/shirts/j01.jpg" alt="" />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img src="/img/shirts/j02.jpg" alt="" />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img src="/img/shirts/j03.jpg" alt="" />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img src="/img/shirts/j04.png" alt="" />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img src="/img/shirts/ts01.jpg" alt="" />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img src="/img/shirts/ts02.jpg" alt="" />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img src="/img/shirts/ts03.jpg" alt="" />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img src="/img/shirts/ts04.png" alt="" />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img src="/img/shirts/ts05.jpg" alt="" />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img src="/img/shirts/ts06.jpg" alt="" />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img src="/img/shirts/ts07.jpg" alt="" />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img src="/img/shirts/ts08.jpg" alt="" />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img src="/img/shirts/ts09.jpg" alt="" />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img src="/img/shirts/ts10.png" alt="" />
-              </SwiperSlide>
-            </Swiper>
-          </Col>
-          <Col md={6}>
-            <Swiper
-              effect={'cards'}
-              grabCursor={true}
-              loop={true}
-              modules={[EffectCards]}
-              className="cardSwiper"
-            >
-              <SwiperSlide>
-                <img src="/img/hoodie/h01.jpg" alt="" />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img src="/img/hoodie/h02.jpg" alt="" />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img src="/img/hoodie/h03.jpg" alt="" />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img src="/img/hoodie/h04.png" alt="" />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img src="/img/hoodie/sws01.jpg" alt="" />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img src="/img/hoodie/sws02.jpg" alt="" />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img src="/img/hoodie/sws03.jpg" alt="" />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img src="/img/hoodie/sws04.jpg" alt="" />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img src="/img/hoodie/sws05.jpg" alt="" />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img src="/img/hoodie/sws06.jpg" alt="" />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img src="/img/hoodie/sws07.jpg" alt="" />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img src="/img/hoodie/sws08.jpg" alt="" />
-              </SwiperSlide>
-            </Swiper>
-          </Col>
-        </Row>
-      </Container>
+      <div style={{textAlign:'center'}}>
+        <h2 style={{margin:'50px'}}><span>SHIRTS & HOODIE</span></h2>
+        <Container>
+          <Row>
+            <Col md={6}>
+              <Swiper
+                effect={'cards'}
+                grabCursor={true}
+                loop={true}
+                modules={[EffectCards]}
+                className="cardSwiper"
+              >
+                <SwiperSlide>
+                  <img src="/img/shirts/j01.jpg" alt="" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src="/img/shirts/j02.jpg" alt="" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src="/img/shirts/j03.jpg" alt="" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src="/img/shirts/j04.png" alt="" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src="/img/shirts/ts01.jpg" alt="" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src="/img/shirts/ts02.jpg" alt="" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src="/img/shirts/ts03.jpg" alt="" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src="/img/shirts/ts04.png" alt="" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src="/img/shirts/ts05.jpg" alt="" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src="/img/shirts/ts06.jpg" alt="" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src="/img/shirts/ts07.jpg" alt="" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src="/img/shirts/ts08.jpg" alt="" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src="/img/shirts/ts09.jpg" alt="" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src="/img/shirts/ts10.png" alt="" />
+                </SwiperSlide>
+              </Swiper>
+            </Col>
+            <Col md={6}>
+              <Swiper
+                effect={'cards'}
+                grabCursor={true}
+                loop={true}
+                modules={[EffectCards]}
+                className="cardSwiper"
+              >
+                <SwiperSlide>
+                  <img src="/img/hoodie/h01.jpg" alt="" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src="/img/hoodie/h02.jpg" alt="" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src="/img/hoodie/h03.jpg" alt="" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src="/img/hoodie/h04.png" alt="" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src="/img/hoodie/sws01.jpg" alt="" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src="/img/hoodie/sws02.jpg" alt="" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src="/img/hoodie/sws03.jpg" alt="" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src="/img/hoodie/sws04.jpg" alt="" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src="/img/hoodie/sws05.jpg" alt="" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src="/img/hoodie/sws06.jpg" alt="" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src="/img/hoodie/sws07.jpg" alt="" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src="/img/hoodie/sws08.jpg" alt="" />
+                </SwiperSlide>
+              </Swiper>
+            </Col>
+          </Row>
+        </Container>
+      </div>
 
 
       <Saleitems>
