@@ -12,6 +12,29 @@ body {
   padding: 0;
 }
 
+.btn-danger {
+  background-color: #e2012d;
+}
+
+.btn-outline-danger {
+  --bs-btn-hover-bg: #e2012d;
+  --bs-btn-hover-border-color: #e2012d;
+  --bs-btn-color: #e2012d;
+  --bs-btn-border-color: #e2012d;
+}
+
+#main-slide {
+  --swiper-theme-color: #e2012d;
+  .swiper-pagination-bullet {
+    width: var(--swiper-pagination-bullet-width, 30px);
+    border-radius: 0px;
+  }
+}
+
+#worlds-slide {
+  --swiper-theme-color: #e2012d;
+}
+
 .mySwiper {
   user-select: none;
   width: 100%;

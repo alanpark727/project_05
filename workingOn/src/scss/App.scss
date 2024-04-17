@@ -25,3 +25,17 @@ a {
   align-items: center;
 }
 
+#navbar {
+  --bs-navbar-color: rgba(255,255,255,1);
+}
+
+#responsive-navbar-nav {
+  padding: 10px 20px;
+  background-color: #000;
+  .me-auto {
+    padding: 10px;
+  }
+  #user-nav {
+    padding: 10px;
+  }
+}

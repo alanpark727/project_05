@@ -2,6 +2,7 @@ import React from 'react'
 import { Table, Button } from 'react-bootstrap'
 import { useDispatch, useSelector} from 'react-redux'
 import { addCount, sortName, minusCount, minusItem } from '../store'
+import { useNavigate } from 'react-router-dom'
 import styled from 'styled-components';
 import '../scss/Cart.scss';
 
@@ -30,6 +31,7 @@ const Banner2 = styled.button`
 const Cart = () => {
   let cart = useSelector((state) => state.cart)
   let dispatch = useDispatch()
+  const navigate = useNavigate();
 
   return (
     <div className='cart'>
@@ -70,9 +72,10 @@ const Cart = () => {
           }
         </tbody>
       </Table>
-      <Button variant='outline-primary' onClick={()=>{dispatch(sortName())}}>이름순정렬</Button>{' '}
+      <Button variant='outline-danger' onClick={()=>{dispatch(sortName())}}>이름순정렬</Button>{' '}
       <h2>총 합계</h2>
       <p>10만원 이상 무료배송</p>
+      <Button variant='danger' onClick={()=>{navigate('/login/')}}>구매하기</Button>
     </div>
   )
 }

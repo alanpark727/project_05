@@ -25,7 +25,7 @@ function App() {
 
   return (
     <div className="App">
-      <Navbar bg="black" data-bs-theme="dark" sticky='top'>
+      <Navbar id='navbar' expand='lg' bg="black" data-bs-theme="dark" sticky='top' collapseOnSelect>
       <Container>
         <Navbar.Brand style={{cursor:'pointer'}} className='logo' onClick={()=>{navigate('/')}}>
           <img src="/img/T1_Logo.png" alt="" width={'100%'}/>
@@ -51,7 +51,7 @@ function App() {
             <Nav.Link onClick={()=>{navigate('/collaboration/')}}>COLLABORATION</Nav.Link>
             <Nav.Link>SALE</Nav.Link>
           </Nav>
-          <Nav>
+          <Nav id='user-nav'>
             <Nav.Link>Account</Nav.Link>
             <Nav.Link>Search</Nav.Link>
             <Nav.Link onClick={()=>{navigate('/cart/')}}>

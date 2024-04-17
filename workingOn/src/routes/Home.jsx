@@ -48,7 +48,7 @@ const Home = (props) => {
 
   return (
     <>
-      <Swiper
+      <Swiper id='main-slide'
         spaceBetween={30}
         centeredSlides={true}
         autoplay={{
@@ -104,7 +104,7 @@ const Home = (props) => {
         <p>2023 WORLDS CHAMPION T1</p>
       </Worlds>
 
-      <Swiper
+      <Swiper id='worlds-slide'
         slidesPerView={3}
         spaceBetween={40}
         loop={true}
