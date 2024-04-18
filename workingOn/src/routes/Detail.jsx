@@ -14,33 +14,50 @@ const Detail = (props) => {
     let [tab, setTab] = useState(0);
     let dispatch = useDispatch()
     const [count, setCount] = useState(0);
-
+    const [quantity, setQuantity] = useState(1);
+    let selproduct = newItem.find((x)=>x.id==id);
 
   return (
       <Container className='detail_wrap'>
 
         <Row className='detail_product'>
             <Col md={6} className='product_img'>
-                <img src={newItem[id].imgUrl} width='85%' alt="product" />
+                <img src={selproduct.imgUrl} width='85%' alt="product" />
             </Col>
             <Col md={6} className='product_info'>
                 <div className='like'>
                     <img src="/img/like_btn_bg_left2.png" alt="" />
-                    <button onClick={()=>{
-                        setCount(count++)
-                    }}>LIKE <span>0</span></button>
+                    <button onClick={()=>{setCount(count+1)}}>LIKE <span>{count}</span></button>
                     <img src="/img/like_btn_bg_right2.png" alt="" />
                 </div>
-                <h4 className='pt-5'>{newItem[id].title}</h4>
-                <h4>{newItem[id].price}원</h4>
-                <p>상품코드 {newItem[id].code}</p>
-                <div className='d-grid upper_btn'>
+                <h4 className='pt-5 mb-5'>{selproduct.title}</h4>
+                <h4 style={{fontSize:'2rem', fontWeight:'600'}}>{selproduct.price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}원</h4>
+                <hr />
+                <p>상품코드 {selproduct.code}</p>
+                <div className='product-quantity mb-3'>
+                    <p>{selproduct.title}
+                        <div className='counter'>
+                            <span>{quantity}</span>
+                            <div>
+                                <button onClick={()=>{setQuantity(quantity+1)}}>▲</button>
+                                <button onClick={()=>{
+                                    if(quantity<=1){
+                                        alert('최소 구매수량은 1개 입니다')
+                                        setQuantity(1)
+                                    } else {
+                                    setQuantity(quantity-1)}}}>▼</button>
+                            </div>
+                        </div>
+                    </p>
+                </div>
+                <h4 className='text-end product-price'><span>TOTAL : </span>{(selproduct.price*quantity).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}원 <span>&#40;{quantity}개&#41;</span></h4>
+                <div className='d-grid upper_btn mt-3'>
                     <Button variant="dark" size='lg'>구매하기</Button>
                 </div>
                 <Row className='bottom_btn'>
                     <Col md={6} className='d-grid'>
                         <Button variant='light' onClick={()=>{
-                            dispatch(addItem({ id: newItem[id].id, imgUrl: newItem[id].imgUrl, item: newItem[id].title, price: newItem[id].price, amount: 1}))
+                            dispatch(addItem({ id: selproduct.id, imgUrl: selproduct.imgUrl, item: selproduct.title, price: selproduct.price, amount: quantity}))
                             alert('장바구니에 상품이 담겼습니다.')
                         }}>장바구니</Button>
                     </Col>
@@ -59,13 +76,13 @@ const Detail = (props) => {
                 <Nav.Link onClick={() => { setTab(1) }} eventKey="link-1">구매정보</Nav.Link>
             </Nav.Item>
             <Nav.Item className='detail_tab_item'>
-                <Nav.Link onClick={() => { setTab(2) }} eventKey="link-3">상품후기</Nav.Link>
+                <Nav.Link onClick={() => { setTab(2) }} eventKey="link-3">상품후기&#40;0&#41;</Nav.Link>
             </Nav.Item>
             <Nav.Item className='detail_tab_item'>
                 <Nav.Link onClick={() => { setTab(3) }} eventKey="link-4">상품문의</Nav.Link>
             </Nav.Item>
         </Nav>
-        <TabContent newItem={newItem} id={id} tab={tab} />
+        <TabContent selproduct={selproduct} tab={tab} />
       </Container>
       
   )

@@ -5,9 +5,9 @@ import Product from '../components/Product'
 const Worlds = (props) => {
     const {newItem, no, i} = props;
   return (
-    <Container>
-        <h2>T1 2023 WORLDS COLLECTION</h2>
-        <p>2023 WORLDS CHAMPION T1</p>
+    <Container className='mb-5'>
+        <h2 className='text-center mt-5'>T1 2023 WORLDS COLLECTION</h2>
+        <p className='text-center mb-5'>2023 WORLDS CHAMPION T1</p>
         <Row>
             {
                 newItem.map((value,i) => 

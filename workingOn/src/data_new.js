@@ -1,6 +1,6 @@
 let data0 = [
     {
-        id: 0,
+        id: 100,
         title: "T1 Logo Zip-Up Hoodie - Oatmeal",
         imgUrl: "/img/new/h01.jpg",
         code: "P00000OO",
@@ -10,7 +10,7 @@ let data0 = [
     },
 
     {
-        id: 1,
+        id: 101,
         title: "T1 Logo Zip-Up Hoodie - Grey",
         imgUrl: "/img/new/h02.jpg",
         code: "P00000ON",
@@ -20,7 +20,7 @@ let data0 = [
     },
 
     {
-        id: 2,
+        id: 102,
         title: "T1 Logo Zip-Up Hoodie - Black",
         imgUrl: "/img/new/h03.jpg",
         code: "P00000OM",
@@ -30,7 +30,7 @@ let data0 = [
     },
 
     {
-        id: 3,
+        id: 103,
         title: "T1 Logo Sweatshirt - Grey",
         imgUrl: "/img/new/sws01.jpg",
         code: "P00000OQ",
@@ -40,7 +40,7 @@ let data0 = [
     },
 
     {
-        id: 4,
+        id: 104,
         title: "T1 Logo Sweatshirt - Black",
         imgUrl: "/img/new/sws02.jpg",
         code: "P00000OP",
@@ -50,7 +50,7 @@ let data0 = [
     },
 
     {
-        id: 5,
+        id: 105,
         title: "2024 T1 Uniform Mini Notepad",
         imgUrl: "/img/new/new01.jpg",
         code: "P00000OL",
@@ -60,7 +60,7 @@ let data0 = [
     },
 
     {
-        id: 6,
+        id: 106,
         title: "2024 T1 Uniform Jersey Keychain",
         imgUrl: "/img/new/new02.jpg",
         code: "P00000OJ",
@@ -70,7 +70,7 @@ let data0 = [
     },
 
     {
-        id: 7,
+        id: 107,
         title: "T1 Players Sweatshirt - Zeus",
         imgUrl: "/img/new/sws03.jpg",
         code: "P00000OE",
@@ -80,7 +80,7 @@ let data0 = [
     },
 
     {
-        id: 8,
+        id: 108,
         title: "T1 Players Sweatshirt - Oner",
         imgUrl: "/img/new/sws04.jpg",
         code: "P00000OF",
@@ -90,7 +90,7 @@ let data0 = [
     },
 
     {
-        id: 9,
+        id: 109,
         title: "T1 Players Sweatshirt - Faker",
         imgUrl: "/img/new/sws05.jpg",
         code: "P00000OG",
@@ -100,7 +100,7 @@ let data0 = [
     },
 
     {
-        id: 10,
+        id: 110,
         title: "T1 Strap Keychain - Red",
         imgUrl: "/img/new/new03.jpg",
         code: "P00000OD",
@@ -110,7 +110,7 @@ let data0 = [
     },
 
     {
-        id: 11,
+        id: 111,
         title: "T1 Pro Notebook",
         imgUrl: "/img/new/new04.jpg",
         code: "P00000OB",
@@ -120,7 +120,7 @@ let data0 = [
     },
 
     {
-        id: 12,
+        id: 112,
         title: "2024 T1 Uniform Jersey Sponsor Marking Kit",
         imgUrl: "/img/new/new05.jpg",
         code: "P00000NU",
@@ -130,7 +130,7 @@ let data0 = [
     },
 
     {
-        id: 13,
+        id: 113,
         title: "2024 T1 Uniform DIY Marking Kit",
         imgUrl: "/img/new/new06.jpg",
         code: "P00000NP",
@@ -140,7 +140,7 @@ let data0 = [
     },
 
     {
-        id: 14,
+        id: 114,
         title: "T1 Logo Notebook - Black",
         imgUrl: "/img/new/new07.jpg",
         code: "P00000NK",
@@ -150,7 +150,7 @@ let data0 = [
     },
 
     {
-        id: 15,
+        id: 115,
         title: "2024 T1 Fabric Calendar",
         imgUrl: "/img/new/new08.jpg",
         code: "P00000NJ",
@@ -160,7 +160,7 @@ let data0 = [
     },
 
     {
-        id: 16,
+        id: 116,
         title: "2024 T1 Calendar",
         imgUrl: "/img/new/new09.jpg",
         code: "P00000NF",
@@ -170,7 +170,7 @@ let data0 = [
     },
 
     {
-        id: 17,
+        id: 117,
         title: "2024 T1 Cheering Kit",
         imgUrl: "/img/new/new10.jpg",
         code: "P00000NE",
@@ -180,7 +180,7 @@ let data0 = [
     },
 
     {
-        id: 18,
+        id: 118,
         title: "2024 T1 Cheering Gymsack",
         imgUrl: "/img/new/new11.jpg",
         code: "P00000MO",
@@ -190,7 +190,7 @@ let data0 = [
     },
 
     {
-        id: 19,
+        id: 119,
         title: "T1 Logo Messenger Bag",
         imgUrl: "/img/new/new12.jpg",
         code: "P00000JA",

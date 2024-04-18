@@ -33,11 +33,12 @@ const Cart = () => {
   let dispatch = useDispatch()
   const navigate = useNavigate();
 
+
   return (
     <div className='cart'>
       <Banner />
       <Banner2 />
-      <h5>장바구니</h5>
+      <h5 className='mt-5' style={{fontSize:'2rem'}}>장바구니</h5>
       <Table responsive='lg'>
         <thead>
           <tr>
@@ -56,15 +57,15 @@ const Cart = () => {
                 <td>{v.id}</td>
                 <td><img src={v.imgUrl} alt="" width={'80px'}/></td>
                 <td>{v.item}</td>
-                <td>{v.price*v.amount}원</td>
+                <td>{(v.price*v.amount).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}원</td>
                 <td>
-                <Button variant='danger' onClick={() =>
+                <Button size='sm' variant='danger' onClick={() =>
                   dispatch(minusCount(v.id))
-                }>-</Button> {v.amount} <Button variant='danger' onClick={() =>
+                }>-</Button> {v.amount} <Button size='sm' variant='danger' onClick={() =>
                   dispatch(addCount(v.id))
                 }>+</Button>
                 </td>
-                <td><Button variant='outline-danger' onClick={()=>{
+                <td><Button size='sm' variant='outline-danger' onClick={()=>{
                   dispatch(minusItem())
                 }}>X</Button></td>
               </tr>
@@ -72,10 +73,10 @@ const Cart = () => {
           }
         </tbody>
       </Table>
-      <Button variant='outline-danger' onClick={()=>{dispatch(sortName())}}>이름순정렬</Button>{' '}
-      <h2>총 합계</h2>
+      <Button className='mt-3' variant='outline-danger' onClick={()=>{dispatch(sortName())}}>이름순정렬</Button>{' '}
+      <h2 className='mt-5'>총 합계  </h2>
       <p>10만원 이상 무료배송</p>
-      <Button variant='danger' onClick={()=>{navigate('/login/')}}>구매하기</Button>
+      <Button className='mt-5 mb-5' variant='danger' onClick={()=>{navigate('/login/')}}>구매하기</Button>
     </div>
   )
 }

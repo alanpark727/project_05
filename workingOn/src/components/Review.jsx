@@ -11,15 +11,16 @@ const Review = () => {
     <div>
       <h3>REVIEW</h3>
       <ReviewBtn>
-        <Button variant='light'>WRITE</Button>
+        <Button variant='light' className='me-2'>WRITE</Button>
         <Button variant='light'>LIST</Button>
       </ReviewBtn>
-      <Table responsive="lg">
+      <Table responsive="lg" className='text-center'>
         <tbody>
           <tr>
-            <td>1</td>
-            <td>Table cell</td>
-            <td>Table cell</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td style={{padding:'100px 0px'}}>게시물이 없습니다</td>
           </tr>
         </tbody>
       </Table>

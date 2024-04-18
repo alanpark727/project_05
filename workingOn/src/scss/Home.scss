@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+KR:wght@100..900&display=swap');
+
 html,
 body {
   position: relative;
@@ -5,11 +7,11 @@ body {
 }
 
 body {
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif, 'Noto Sans KR';
   font-size: 14px;
   color: #000;
   margin: 0;
   padding: 0;
+  font-family: 'Montserrat', 'Noto Sans KR', '맑은 고딕', 'Dotum';
 }
 
 .btn-danger {
@@ -33,6 +35,10 @@ body {
 
 #worlds-slide {
   --swiper-theme-color: #e2012d;
+  .swiper-pagination-bullet {
+    width: var(--swiper-pagination-bullet-width, 30px);
+    border-radius: 0px;
+  }
 }
 
 .mySwiper {
@@ -42,10 +48,26 @@ body {
 }
 
 .cardSwiper {
-  width: 240px;
-  height: 320px;
+  width: 280px;
+  height: 360px;
+  user-select: none;
   img {
     max-height: 90%;
+  }
+  p {
+    display: none;
+    width: 100%;
+    background-color: rgba(0,0,0,0.4);
+    color: #fff;
+    padding: 10px 20px;
+    position: absolute;
+    left: 50%;
+    top: 85%;
+    transform: translate(-50%,-50%);
+    transition: 1s all ease;
+  }
+  &:hover p {
+    display: block;
   }
 }
   
@@ -95,6 +117,7 @@ h5 {
     margin-top: 30px;
     text-align: center;
     span {
+      font-weight: 400;
       color: #fff;
     }
   }
@@ -103,6 +126,21 @@ h5 {
     padding: 10px;
     background-color: #454444;
     color: #fff;
+    .uniform-txt {
+      padding: 20px;
+      h4 {
+        padding: 20px 0px;
+        font-size: 2rem;
+      }
+      p {
+        font-size: 1rem;
+      }
+      button {
+        margin-top: 20px;
+        padding: 10px 30px;
+        border-radius: 30px;
+      }
+    }
   }
 }
 

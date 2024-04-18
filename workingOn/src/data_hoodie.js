@@ -1,6 +1,6 @@
 let data2 = [
     {
-        id: 0,
+        id: 300,
         title: "T1 Logo Zip-Up Hoodie - Oatmeal",
         imgUrl: "/img/hoodie/h01.jpg",
         code: "P00000OO",
@@ -9,7 +9,7 @@ let data2 = [
     },
 
     {
-        id: 1,
+        id: 301,
         title: "T1 Logo Zip-Up Hoodie - Grey",
         imgUrl: "/img/hoodie/h02.jpg",
         code: "P00000ON",
@@ -18,7 +18,7 @@ let data2 = [
     },
 
     {
-        id: 2,
+        id: 302,
         title: "T1 Logo Zip-Up Hoodie - Black",
         imgUrl: "/img/hoodie/h03.jpg",
         code: "P00000OM",
@@ -27,7 +27,7 @@ let data2 = [
     },
 
     {
-        id: 3,
+        id: 303,
         title: "[SALE]T1 NIKE Hoodie",
         imgUrl: "/img/hoodie/h04.png",
         code: "P00000JS",
@@ -36,7 +36,7 @@ let data2 = [
     },
 
     {
-        id: 4,
+        id: 304,
         title: "T1 Logo Sweatshirt - Grey",
         imgUrl: "/img/hoodie/sws01.jpg",
         code: "P00000OQ",
@@ -45,7 +45,7 @@ let data2 = [
     },
 
     {
-        id: 5,
+        id: 305,
         title: "T1 Logo Sweatshirt - Black",
         imgUrl: "/img/hoodie/sws02.jpg",
         code: "P00000OP",
@@ -54,7 +54,7 @@ let data2 = [
     },
 
     {
-        id: 6,
+        id: 306,
         title: "T1 Players Sweatshirt - Zeus",
         imgUrl: "/img/hoodie/sws03.jpg",
         code: "P00000OE",
@@ -63,7 +63,7 @@ let data2 = [
     },
 
     {
-        id: 7,
+        id: 307,
         title: "T1 Players Sweatshirt - Oner",
         imgUrl: "/img/hoodie/sws04.jpg",
         code: "P00000OF",
@@ -72,7 +72,7 @@ let data2 = [
     },
 
     {
-        id: 8,
+        id: 308,
         title: "T1 Players Sweatshirt - Faker",
         imgUrl: "/img/hoodie/sws05.jpg",
         code: "P00000OG",
@@ -81,7 +81,7 @@ let data2 = [
     },
 
     {
-        id: 9,
+        id: 309,
         title: "T1 Players Sweatshirt - Gumayusi",
         imgUrl: "/img/hoodie/sws06.jpg",
         code: "P00000OH",
@@ -90,7 +90,7 @@ let data2 = [
     },
 
     {
-        id: 10,
+        id: 310,
         title: "T1 Players Sweatshirt - Keria",
         imgUrl: "/img/hoodie/sws07.jpg",
         code: "P00000OI",
@@ -99,7 +99,7 @@ let data2 = [
     },
 
     {
-        id: 11,
+        id: 311,
         title: "T1 Logo Half Zip-Up",
         imgUrl: "/img/hoodie/sws08.jpg",
         code: "P00000LD",

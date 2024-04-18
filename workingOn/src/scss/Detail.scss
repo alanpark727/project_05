@@ -27,6 +27,45 @@
                 border: none;
             }
         }
+        .product-quantity {
+            border: 1px solid #eaeaea;
+            padding: 20px 0px 5px 20px;
+            .counter {
+                display: inline-block;
+                height: 30px;
+                border: 1px solid #eaeaea;
+                border-radius: 5px;
+                margin-left: 20px;
+                span {
+                    margin-left: 10px;
+                    margin-right: 10px;
+                    line-height: 30px;
+                }
+                div {
+                    display: inline-flex;
+                    flex-direction: column;
+                    height: 30px;
+                    position: relative;
+                    top: -10px;
+                    button {
+                        width: 15px;
+                        line-height: 15px;
+                        height: 14px;
+                        font-size: 8px;
+                        text-align: center;
+                        border: none;
+                    }
+                }
+            }
+        }
+        .product-price {
+            font-size: 1.2rem;
+            font-weight: 700;
+            span {
+                font-size: 0.8rem;
+                font-weight: 400;
+            }
+        }
     }
 }
 
