@@ -11,7 +11,7 @@ const Worlds = (props) => {
         <Row>
             {
                 newItem.map((value,i) => 
-                <Product newItem={value} key={i} i={i} no={no} j={1} />)
+                <Product newItem={value} key={i} i={i} no={no} j={1} k={1} />)
             }
         </Row>
     </Container>

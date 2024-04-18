@@ -100,7 +100,7 @@ let data5 = [
     },
 
     {
-        id: 610,
+        id: 6010,
         title: "2023 T1 Uniform Away Jersey",
         imgUrl: "/img/uniform/uniform11.jpg",
         code: "P00000IJ",
@@ -110,7 +110,7 @@ let data5 = [
     },
 
     {
-        id: 611,
+        id: 6011,
         title: "2023 T1 Uniform PINK Jersey",
         imgUrl: "/img/uniform/uniform12.jpg",
         code: "P00000IV",
@@ -120,7 +120,7 @@ let data5 = [
     },
 
     {
-        id: 612,
+        id: 6012,
         title: "2023 T1 MSI Uniform Jersey",
         imgUrl: "/img/uniform/uniform13.jpg",
         code: "P00000HX",
@@ -130,7 +130,7 @@ let data5 = [
     },
 
     {
-        id: 613,
+        id: 6013,
         title: "2023 T1 MSI Uniform Zip-up",
         imgUrl: "/img/uniform/uniform14.jpg",
         code: "P00000HY",

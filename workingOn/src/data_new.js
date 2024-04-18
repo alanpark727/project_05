@@ -100,7 +100,7 @@ let data0 = [
     },
 
     {
-        id: 110,
+        id: 1010,
         title: "T1 Strap Keychain - Red",
         imgUrl: "/img/new/new03.jpg",
         code: "P00000OD",
@@ -110,7 +110,7 @@ let data0 = [
     },
 
     {
-        id: 111,
+        id: 1011,
         title: "T1 Pro Notebook",
         imgUrl: "/img/new/new04.jpg",
         code: "P00000OB",
@@ -120,7 +120,7 @@ let data0 = [
     },
 
     {
-        id: 112,
+        id: 1012,
         title: "2024 T1 Uniform Jersey Sponsor Marking Kit",
         imgUrl: "/img/new/new05.jpg",
         code: "P00000NU",
@@ -130,7 +130,7 @@ let data0 = [
     },
 
     {
-        id: 113,
+        id: 1013,
         title: "2024 T1 Uniform DIY Marking Kit",
         imgUrl: "/img/new/new06.jpg",
         code: "P00000NP",
@@ -140,7 +140,7 @@ let data0 = [
     },
 
     {
-        id: 114,
+        id: 1014,
         title: "T1 Logo Notebook - Black",
         imgUrl: "/img/new/new07.jpg",
         code: "P00000NK",
@@ -150,7 +150,7 @@ let data0 = [
     },
 
     {
-        id: 115,
+        id: 1015,
         title: "2024 T1 Fabric Calendar",
         imgUrl: "/img/new/new08.jpg",
         code: "P00000NJ",
@@ -160,7 +160,7 @@ let data0 = [
     },
 
     {
-        id: 116,
+        id: 1016,
         title: "2024 T1 Calendar",
         imgUrl: "/img/new/new09.jpg",
         code: "P00000NF",
@@ -170,7 +170,7 @@ let data0 = [
     },
 
     {
-        id: 117,
+        id: 1017,
         title: "2024 T1 Cheering Kit",
         imgUrl: "/img/new/new10.jpg",
         code: "P00000NE",
@@ -180,7 +180,7 @@ let data0 = [
     },
 
     {
-        id: 118,
+        id: 1018,
         title: "2024 T1 Cheering Gymsack",
         imgUrl: "/img/new/new11.jpg",
         code: "P00000MO",
@@ -190,7 +190,7 @@ let data0 = [
     },
 
     {
-        id: 119,
+        id: 1019,
         title: "T1 Logo Messenger Bag",
         imgUrl: "/img/new/new12.jpg",
         code: "P00000JA",

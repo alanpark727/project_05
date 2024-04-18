@@ -100,7 +100,7 @@ let data3 = [
     },
 
     {
-        id: 410,
+        id: 4010,
         title: "2023 World Champions T1 Mug",
         imgUrl: "/img/worlds/worlds11.jpg",
         code: "P00000MB",
@@ -110,7 +110,7 @@ let data3 = [
     },
 
     {
-        id: 411,
+        id: 4011,
         title: "T1 2023 Worlds Player Desk Mat",
         imgUrl: "/img/worlds/worlds12.jpg",
         code: "P00000LV",
@@ -120,7 +120,7 @@ let data3 = [
     },
 
     {
-        id: 412,
+        id: 4012,
         title: "T1 2023 Worlds Acrylic Mini Figure",
         imgUrl: "/img/worlds/worlds13.jpg",
         code: "P00000LU",
@@ -130,7 +130,7 @@ let data3 = [
     },
 
     {
-        id: 413,
+        id: 4013,
         title: "2023 T1 Uniform Worlds Jacket - Red",
         imgUrl: "/img/worlds/worlds14.jpg",
         code: "P00000LS",
@@ -140,7 +140,7 @@ let data3 = [
     },
 
     {
-        id: 414,
+        id: 4014,
         title: "2023 T1 Worlds Muffler",
         imgUrl: "/img/worlds/worlds15.jpg",
         code: "P00000LR",
@@ -150,7 +150,7 @@ let data3 = [
     },
 
     {
-        id: 415,
+        id: 4015,
         title: "2023 T1 Uniform Worlds Jersey",
         imgUrl: "/img/worlds/worlds16.jpg",
         code: "P00000LQ",
@@ -160,7 +160,7 @@ let data3 = [
     },
 
     {
-        id: 416,
+        id: 4016,
         title: "2023 T1 Uniform Worlds Jacket - Black",
         imgUrl: "/img/worlds/worlds17.jpg",
         code: "P00000LK",
@@ -170,7 +170,7 @@ let data3 = [
     },
 
     {
-        id: 417,
+        id: 4017,
         title: "2023 T1 Uniform Worlds Pants",
         imgUrl: "/img/worlds/worlds18.jpg",
         code: "P00000LL",
@@ -180,7 +180,7 @@ let data3 = [
     },
 
     {
-        id: 418,
+        id: 4018,
         title: "T1 2023 Worlds Edition Eco Bag",
         imgUrl: "/img/worlds/worlds19.jpg",
         code: "P00000KZ",
@@ -190,7 +190,7 @@ let data3 = [
     },
 
     {
-        id: 419,
+        id: 4019,
         title: "T1 2023 Worlds Edition Griptok",
         imgUrl: "/img/worlds/worlds20.jpg",
         code: "P00000KS",

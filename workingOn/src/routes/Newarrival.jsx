@@ -13,8 +13,8 @@ const Newarrival = (props) => {
         <p className='text-center mb-5'>T1의 신상품을 만나보세요</p>
         <Row>
             {
-                selproduct.map((value,i) => 
-                <Product selproduct={value} key={i} i={i} no={no} j={0} />)
+                newItem.map((value,i) => 
+                <Product newItem={value} key={i} i={i} no={no} j={0} k={0} />)
             }
         </Row>
     </Container>

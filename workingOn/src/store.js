@@ -22,12 +22,17 @@ let cart = createSlice({
         },
 
         addItem(state, action){
-            state.push(action.payload)
-            
+            let num = state.findIndex(a => a.id === action.payload.id)
+            if (num >= 0){
+                state[num].amount++;
+            } else {
+                state.push(action.payload)
+            }
         },
 
         minusItem(state, action){
-            state.splice(action.payload,1)
+            let num = state.findIndex(a => a.id === action.payload)
+            state.splice(num,1)
         }
     }
 })

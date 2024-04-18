@@ -12,7 +12,7 @@ const Uniform = (props) => {
         <Row>
             {
                 newItem.map((value,i) => 
-                <Product newItem={value} key={i} i={i} no={no} j={2} />)
+                <Product newItem={value} key={i} i={i} no={no} j={2} k={2} />)
             }
         </Row>
     </Container>
