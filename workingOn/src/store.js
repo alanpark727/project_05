@@ -12,7 +12,13 @@ let cart = createSlice({
 
         minusCount(state, action){
             let idx = state.findIndex((a) => { return a.id === action.payload })
-            --state[idx].amount;
+
+            if(state[idx].amount <=1){
+                alert('최소 구매수량은 1개 입니다')
+                state[idx].amount=1;
+            } else {
+                --state[idx].amount;
+            }
         },
 
         sortName(state){

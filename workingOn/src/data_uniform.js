@@ -1,6 +1,6 @@
 let data5 = [
     {
-        id: 600,
+        id: 40,
         title: "2024 T1 Uniform Jacket",
         imgUrl: "/img/uniform/uniform01.jpg",
         code: "P00000NO",
@@ -10,7 +10,7 @@ let data5 = [
     },
 
     {
-        id: 601,
+        id: 41,
         title: "2024 T1 Uniform Jersey",
         imgUrl: "/img/uniform/uniform02.jpg",
         code: "P00000NT",
@@ -20,7 +20,7 @@ let data5 = [
     },
 
     {
-        id: 602,
+        id: 42,
         title: "2024 T1 Uniform DIY Marking Kit",
         imgUrl: "/img/uniform/uniform03.jpg",
         code: "P00000NP",
@@ -30,7 +30,7 @@ let data5 = [
     },
 
     {
-        id: 603,
+        id: 43,
         title: "2024 T1 Uniform Jersey Sponsor Marking Kit",
         imgUrl: "/img/uniform/uniform04.jpg",
         code: "P00000NU",
@@ -40,7 +40,7 @@ let data5 = [
     },
 
     {
-        id: 604,
+        id: 44,
         title: "2023 T1 Uniform Worlds Jacket - Black",
         imgUrl: "/img/uniform/uniform05.jpg",
         code: "P00000LK",
@@ -50,7 +50,7 @@ let data5 = [
     },
 
     {
-        id: 605,
+        id: 45,
         title: "2023 T1 Uniform Worlds Jacket - Red",
         imgUrl: "/img/uniform/uniform06.jpg",
         code: "P00000LS",
@@ -60,7 +60,7 @@ let data5 = [
     },
 
     {
-        id: 606,
+        id: 46,
         title: "2023 T1 Uniform Worlds Pants",
         imgUrl: "/img/uniform/uniform07.jpg",
         code: "P00000LL",
@@ -70,7 +70,7 @@ let data5 = [
     },
 
     {
-        id: 607,
+        id: 47,
         title: "2023 T1 Uniform Worlds Jersey",
         imgUrl: "/img/uniform/uniform08.jpg",
         code: "P00000LQ",
@@ -80,7 +80,7 @@ let data5 = [
     },
 
     {
-        id: 608,
+        id: 48,
         title: "2023 T1 Uniform Jacket",
         imgUrl: "/img/uniform/uniform09.png",
         code: "P00000FN",
@@ -90,7 +90,7 @@ let data5 = [
     },
 
     {
-        id: 609,
+        id: 49,
         title: "2023 T1 Uniform Home Jersey",
         imgUrl: "/img/uniform/uniform10.png",
         code: "P00000FM",
@@ -100,7 +100,7 @@ let data5 = [
     },
 
     {
-        id: 6010,
+        id: 50,
         title: "2023 T1 Uniform Away Jersey",
         imgUrl: "/img/uniform/uniform11.jpg",
         code: "P00000IJ",
@@ -110,7 +110,7 @@ let data5 = [
     },
 
     {
-        id: 6011,
+        id: 51,
         title: "2023 T1 Uniform PINK Jersey",
         imgUrl: "/img/uniform/uniform12.jpg",
         code: "P00000IV",
@@ -120,7 +120,7 @@ let data5 = [
     },
 
     {
-        id: 6012,
+        id: 52,
         title: "2023 T1 MSI Uniform Jersey",
         imgUrl: "/img/uniform/uniform13.jpg",
         code: "P00000HX",
@@ -130,7 +130,7 @@ let data5 = [
     },
 
     {
-        id: 6013,
+        id: 53,
         title: "2023 T1 MSI Uniform Zip-up",
         imgUrl: "/img/uniform/uniform14.jpg",
         code: "P00000HY",

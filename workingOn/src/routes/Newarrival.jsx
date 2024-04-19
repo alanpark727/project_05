@@ -10,11 +10,11 @@ const Newarrival = (props) => {
   return (
     <Container className='mb-5'>
         <h2 className='text-center mt-5'>NEW ARRIVAL</h2>
-        <p className='text-center mb-5'>T1의 신상품을 만나보세요</p>
+        <p className='text-center mb-5' style={{color:'#aaa'}}>T1의 신상품을 만나보세요</p>
         <Row>
             {
                 newItem.map((value,i) => 
-                <Product newItem={value} key={i} i={i} no={no} j={0} k={0} />)
+                <Product newItem={value} key={i} i={i} no={no} j={0} />)
             }
         </Row>
     </Container>

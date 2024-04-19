@@ -1,6 +1,6 @@
 let data4 = [
     {
-        id: 500,
+        id: 54,
         title: "[SALE] T1 x NIKE Red/White Cap",
         imgUrl: "/img/sale/sale01.png",
         code: "P00000JV",
@@ -10,7 +10,7 @@ let data4 = [
     },
 
     {
-        id: 501,
+        id: 55,
         title: "[SALE] T1 x NIKE Hoodie",
         imgUrl: "/img/sale/sale02.png",
         code: "P00000JS",
@@ -20,7 +20,7 @@ let data4 = [
     },
 
     {
-        id: 502,
+        id: 56,
         title: "[SALE] T1 Official Jersey 2021",
         imgUrl: "/img/sale/sale03.png",
         code: "P00000JW",
@@ -30,7 +30,7 @@ let data4 = [
     },
 
     {
-        id: 503,
+        id: 57,
         title: "[SALE] T1 Summer Nylon Shorts",
         imgUrl: "/img/sale/sale04.jpg",
         optionUrl1: "/img/sale/sale04_2.jpg",

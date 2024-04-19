@@ -6,17 +6,6 @@ import { useNavigate } from 'react-router-dom'
 import styled from 'styled-components';
 import '../scss/Cart.scss';
 
-const Banner = styled.button`
-  background-image: url('/img/banner1.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-color: #fff;
-  border: none;
-  width: 100%;
-  height: 400px;
-`
-
 const Banner2 = styled.button`
   background-image: url('/img/banner2.webp');
   background-position: center;
@@ -56,7 +45,6 @@ const Cart = () => {
 
   return (
     <div className='cart'>
-      <Banner />
       <Banner2 />
       <h5 className='mt-5' style={{fontSize:'2rem'}}>장바구니</h5>
       <Table responsive='lg'>
@@ -79,14 +67,14 @@ const Cart = () => {
                 <td>{v.item}</td>
                 <td>{(v.price*v.amount).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}원</td>
                 <td>
-                <Button size='sm' variant='danger' onClick={() =>
+                <Button size='sm' variant='danger' className='amount-btn me-2' onClick={() =>
                   dispatch(minusCount(v.id))
-                }>-</Button> {v.amount} <Button size='sm' variant='danger' onClick={() =>
+                }>-</Button> {v.amount} <Button size='sm' variant='danger' className='amount-btn ms-2' onClick={() =>
                   dispatch(addCount(v.id))
                 }>+</Button>
                 </td>
                 <td><Button size='sm' variant='outline-danger' onClick={()=>{
-                  dispatch(minusItem())
+                  dispatch(minusItem(v.id))
                 }}>X</Button></td>
               </tr>
             )
@@ -94,9 +82,12 @@ const Cart = () => {
         </tbody>
       </Table>
       <Button className='mt-3' variant='outline-danger' onClick={()=>{dispatch(sortName())}}>이름순정렬</Button>{' '}
-      <h2 className='mt-5'>총 합계 {total().toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}원 </h2>
-      <p>10만원 이상 무료배송</p>
-      <Button className='mt-5 mb-5' variant='danger' onClick={()=>{navigate('/login/')}}>구매하기</Button>
+      <h2 className='mt-5'>총 합계</h2>
+      <p className='mt-3'>10만원 이상 무료배송</p>
+      <h2 className='mt-5'> {total().toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}원 + {shipping.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}원 = {(total() + shipping).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}원</h2>
+      <Button className='mt-5 mb-5' variant='danger' onClick={()=>{
+        alert('로그인이 필요한 서비스입니다.')
+        navigate('/login/')}}>구매하기</Button>
     </div>
   )
 }

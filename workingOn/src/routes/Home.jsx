@@ -62,11 +62,12 @@ const Home = (props) => {
     for (let i in copy){
       no_copy.push(copy[i].id)
     }
+    console.log(no_copy)
     setNo(no_copy)
   }
 
-  const latestOrder = ()=> {
-    let copy = [...newItem].sort((a,b)=>(a.id > b.id) ? 1:-1)
+  const decPrice = ()=> {
+    let copy = [...newItem].sort((a,b)=>(a.price < b.price) ? 1:-1)
     setNewItem(copy)
     let no_copy=[];
     for (let i in copy){
@@ -118,10 +119,10 @@ const Home = (props) => {
 
       <NewArrival>
         <h2><span onClick={()=>{navigate('/newarrival/')}}>NEW ARRIVAL</span></h2>
-        <p>T1의 신상품을 만나보세요</p>
+        <p style={{color:'#aaa'}}>T1의 신상품을 만나보세요</p>
         <Button variant='danger' onClick={sortTitle}>이름순 정렬</Button>{' '}
         <Button variant='danger' onClick={incPrice}>낮은가격순 정렬</Button>{' '}
-        <Button variant='danger' onClick={latestOrder}>높은가격순 정렬</Button>
+        <Button variant='danger' onClick={decPrice}>높은가격순 정렬</Button>
       </NewArrival>
 
       <Container>
@@ -134,7 +135,7 @@ const Home = (props) => {
 
       <Worlds>
         <h2><span onClick={()=>{navigate('/worlds2023/')}}>T1 2023 WORLDS COLLECTION</span></h2>
-        <p>2023 WORLDS CHAMPION T1</p>
+        <p style={{color:'#aaa'}}>2023 WORLDS CHAMPION T1</p>
       </Worlds>
 
       <Swiper id='worlds-slide'
@@ -188,7 +189,7 @@ const Home = (props) => {
       </Swiper>
 
       <Uniform className='uniform'>
-        <h2><span>T1 OFFICIAL UNIFORM</span></h2>
+        <h2><span onClick={()=>{navigate('/uniforms/')}}>T1 OFFICIAL UNIFORM</span></h2>
         <Container>
           <Row>
             <Col md={6}>
@@ -337,13 +338,13 @@ const Home = (props) => {
 
 
       <Saleitems>
-        <h2>SALE</h2>
+        <h2><span>SALE</span></h2>
       </Saleitems>
 
       <Container>
         <Row>
           {sale.map((value, i) => 
-            <Sale sale={value} key={i} no={no} i={i} />)
+            <Sale sale={value} key={i} no={no} i={i} j={3} />)
           }
         </Row>
       </Container>
@@ -380,22 +381,22 @@ const Home = (props) => {
       }}>+ 더 보기</Button>{' '}</div>
 
       <Collaboration>
-          <h2>COLLABORATION</h2>
-          <p>T1의 다양한 콜라보레이션 제품</p>
+          <h2><span>COLLABORATION</span></h2>
+          <p style={{color:'#aaa'}}>T1의 다양한 콜라보레이션 제품</p>
       </Collaboration>
 
       <Container className='mb-5'>
         <Row>
           <Col md={4}>
-            <a href="#none" onClick={()=>{alert("이벤트가 종료되었습니다. 새로운 소식으로 찾아뵙겠습니다.")}}><img src="/img/timeflik.jpg" alt="" width={'100%'} /></a>
+            <a href="#none" onClick={()=>{alert("이벤트가 종료되었습니다. 새로운 소식으로 찾아뵙겠습니다.")}}><img src="/img/timeflik.jpg" alt="timeflik" width={'100%'} /></a>
             <h3>T1 X TIMEFLIK</h3>
           </Col>
           <Col md={4}>
-            <a href="https://secretlabchairs.co.kr/pages/t1?rfsn=3320317.0af73f&utm_campaign=3320317.0af73f&utm_medium=affiliate&utm_source=refersion" target='_blank'><img src="/img/re02.png" alt="" width={'100%'} /></a>
+            <a href="https://secretlabchairs.co.kr/pages/t1?rfsn=3320317.0af73f&utm_campaign=3320317.0af73f&utm_medium=affiliate&utm_source=refersion" target='_blank'><img src="/img/re02.png" alt="secretlab" width={'100%'} /></a>
             <h3>T1 X SECRETLAB</h3>
           </Col>
           <Col md={4}>
-            <a href='' onClick={()=>{navigate('/collaboration/razer/')}}><img src="/img/razer2.png" alt="" width={'100%'} /></a>
+            <a onClick={()=>{navigate('/collaboration/razer/')}} style={{cursor:'pointer'}}><img src="/img/razer2.png" alt="razor" width={'100%'} /></a>
             <h3>FAKER X RAZER</h3>
           </Col>
         </Row>

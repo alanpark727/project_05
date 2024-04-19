@@ -1,7 +1,7 @@
 import Nav from 'react-bootstrap/Nav';
 import { Container, Row, Col, Button } from 'react-bootstrap'
 import React, { useState, useEffect } from 'react'
-import { useParams } from 'react-router-dom'
+import { useNavigate, useParams } from 'react-router-dom'
 import TabContent from '../components/TabContent';
 import { addItem } from '../store';
 import { useDispatch } from 'react-redux'
@@ -13,6 +13,7 @@ const Detail = (props) => {
     let {id} = useParams();
     let [tab, setTab] = useState(0);
     let dispatch = useDispatch()
+    const navigate = useNavigate()
     const [count, setCount] = useState(0);
     const [quantity, setQuantity] = useState(1);
     let selproduct = newItem.find((x)=>x.id==id);
@@ -52,7 +53,9 @@ const Detail = (props) => {
                 </div>
                 <h4 className='text-end product-price'><span>TOTAL : </span>{(selproduct.price*quantity).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}원 <span>&#40;{quantity}개&#41;</span></h4>
                 <div className='d-grid upper_btn mt-3'>
-                    <Button variant="dark" size='lg'>구매하기</Button>
+                    <Button variant="dark" size='lg' onClick={()=>{
+                        dispatch(addItem({ id: selproduct.id, imgUrl: selproduct.imgUrl, item: selproduct.title, price: selproduct.price, amount: quantity}))
+                        if(window.confirm('장바구니에 상품이 담겼습니다. 바로 이동하시겠습니까?')){navigate('/cart')}}}>구매하기</Button>
                 </div>
                 <Row className='bottom_btn'>
                     <Col md={6} className='d-grid'>
@@ -62,7 +65,9 @@ const Detail = (props) => {
                         }}>장바구니</Button>
                     </Col>
                     <Col md={6} className='d-grid'>
-                        <Button variant='light'>관심상품</Button>
+                        <Button variant='light' onClick={()=>{
+                            if(window.confirm('로그인이 필요한 서비스입니다. 로그인 하시겠습니까?')){navigate('/login')}
+                        }}>관심상품</Button>
                     </Col>
                 </Row>
             </Col>

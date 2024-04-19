@@ -1,6 +1,6 @@
 let data3 = [
     {
-        id: 400,
+        id: 20,
         title: "T1 Logo Badge - Champions Edition",
         imgUrl: "/img/worlds/worlds01.jpg",
         code: "P00000MN",
@@ -10,7 +10,7 @@ let data3 = [
     },
 
     {
-        id: 401,
+        id: 21,
         title: "2023 World Champions T1 Desk Mat Ver.1",
         imgUrl: "/img/worlds/worlds02.jpg",
         code: "P00000MP",
@@ -20,7 +20,7 @@ let data3 = [
     },
 
     {
-        id: 402,
+        id: 22,
         title: "2023 World Champions T1 Desk Mat Ver.2",
         imgUrl: "/img/worlds/worlds03.jpg",
         code: "P00000MQ",
@@ -30,7 +30,7 @@ let data3 = [
     },
 
     {
-        id: 403,
+        id: 23,
         title: "2023 World Champions T1 Half Zip-Up",
         imgUrl: "/img/worlds/worlds04.jpg",
         code: "P00000MX",
@@ -40,7 +40,7 @@ let data3 = [
     },
 
     {
-        id: 404,
+        id: 24,
         title: "2023 World Champions T1 Fleece Jacket",
         imgUrl: "/img/worlds/worlds05.jpg",
         code: "P00000MY",
@@ -50,7 +50,7 @@ let data3 = [
     },
 
     {
-        id: 405,
+        id: 25,
         title: "2023 World Champions T1 T-Shirt",
         imgUrl: "/img/worlds/worlds06.jpg",
         code: "P00000LW",
@@ -60,7 +60,7 @@ let data3 = [
     },
 
     {
-        id: 406,
+        id: 26,
         title: "2023 World Champions T1 Ball Cap",
         imgUrl: "/img/worlds/worlds07.jpg",
         code: "P00000LX",
@@ -70,7 +70,7 @@ let data3 = [
     },
 
     {
-        id: 407,
+        id: 27,
         title: "2023 World Champions T1 Badge",
         imgUrl: "/img/worlds/worlds08.jpg",
         code: "P00000LZ",
@@ -80,7 +80,7 @@ let data3 = [
     },
 
     {
-        id: 408,
+        id: 28,
         title: "2023 World Champions T1 Keychain",
         imgUrl: "/img/worlds/worlds09.jpg",
         code: "P00000MA",
@@ -90,7 +90,7 @@ let data3 = [
     },
 
     {
-        id: 409,
+        id: 29,
         title: "2023 World Champions T1 Tumbler",
         imgUrl: "/img/worlds/worlds10.jpg",
         code: "P00000LY",
@@ -100,7 +100,7 @@ let data3 = [
     },
 
     {
-        id: 4010,
+        id: 30,
         title: "2023 World Champions T1 Mug",
         imgUrl: "/img/worlds/worlds11.jpg",
         code: "P00000MB",
@@ -110,7 +110,7 @@ let data3 = [
     },
 
     {
-        id: 4011,
+        id: 31,
         title: "T1 2023 Worlds Player Desk Mat",
         imgUrl: "/img/worlds/worlds12.jpg",
         code: "P00000LV",
@@ -120,7 +120,7 @@ let data3 = [
     },
 
     {
-        id: 4012,
+        id: 32,
         title: "T1 2023 Worlds Acrylic Mini Figure",
         imgUrl: "/img/worlds/worlds13.jpg",
         code: "P00000LU",
@@ -130,7 +130,7 @@ let data3 = [
     },
 
     {
-        id: 4013,
+        id: 33,
         title: "2023 T1 Uniform Worlds Jacket - Red",
         imgUrl: "/img/worlds/worlds14.jpg",
         code: "P00000LS",
@@ -140,7 +140,7 @@ let data3 = [
     },
 
     {
-        id: 4014,
+        id: 34,
         title: "2023 T1 Worlds Muffler",
         imgUrl: "/img/worlds/worlds15.jpg",
         code: "P00000LR",
@@ -150,7 +150,7 @@ let data3 = [
     },
 
     {
-        id: 4015,
+        id: 35,
         title: "2023 T1 Uniform Worlds Jersey",
         imgUrl: "/img/worlds/worlds16.jpg",
         code: "P00000LQ",
@@ -160,7 +160,7 @@ let data3 = [
     },
 
     {
-        id: 4016,
+        id: 36,
         title: "2023 T1 Uniform Worlds Jacket - Black",
         imgUrl: "/img/worlds/worlds17.jpg",
         code: "P00000LK",
@@ -170,7 +170,7 @@ let data3 = [
     },
 
     {
-        id: 4017,
+        id: 37,
         title: "2023 T1 Uniform Worlds Pants",
         imgUrl: "/img/worlds/worlds18.jpg",
         code: "P00000LL",
@@ -180,7 +180,7 @@ let data3 = [
     },
 
     {
-        id: 4018,
+        id: 38,
         title: "T1 2023 Worlds Edition Eco Bag",
         imgUrl: "/img/worlds/worlds19.jpg",
         code: "P00000KZ",
@@ -190,7 +190,7 @@ let data3 = [
     },
 
     {
-        id: 4019,
+        id: 39,
         title: "T1 2023 Worlds Edition Griptok",
         imgUrl: "/img/worlds/worlds20.jpg",
         code: "P00000KS",
