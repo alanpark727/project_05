@@ -43,6 +43,8 @@ const Home = (props) => {
   const {newItem, setNewItem, no, setNo} = props;
   const [sale, setSale] = useState(data4);
   const [count, setCount] = useState(1);
+  const [isHover, setIsHover] = useState(false);
+  const toggleHover = () => setIsHover(!isHover);
   const navigate = useNavigate();
 
   const sortTitle = ()=> {
@@ -119,6 +121,7 @@ const Home = (props) => {
 
       <NewArrival>
         <h2><span onClick={()=>{navigate('/newarrival/')}}>NEW ARRIVAL</span></h2>
+        <p className='bar'></p>
         <p style={{color:'#aaa'}}>T1의 신상품을 만나보세요</p>
         <Button variant='danger' onClick={sortTitle}>이름순 정렬</Button>{' '}
         <Button variant='danger' onClick={incPrice}>낮은가격순 정렬</Button>{' '}
@@ -135,6 +138,7 @@ const Home = (props) => {
 
       <Worlds>
         <h2><span onClick={()=>{navigate('/worlds2023/')}}>T1 2023 WORLDS COLLECTION</span></h2>
+        <p className='bar'></p>
         <p style={{color:'#aaa'}}>2023 WORLDS CHAMPION T1</p>
       </Worlds>
 
@@ -190,6 +194,7 @@ const Home = (props) => {
 
       <Uniform className='uniform'>
         <h2><span onClick={()=>{navigate('/uniforms/')}}>T1 OFFICIAL UNIFORM</span></h2>
+        <p className='bar white'></p>
         <Container>
           <Row>
             <Col md={6}>
@@ -206,6 +211,7 @@ const Home = (props) => {
 
       <div style={{textAlign:'center'}}>
         <h2 style={{margin:'50px'}}><span>SHIRTS & HOODIE</span></h2>
+        <p className='bar'></p>
         <Container>
           <Row>
             <Col md={6}>
@@ -339,6 +345,7 @@ const Home = (props) => {
 
       <Saleitems>
         <h2><span>SALE</span></h2>
+        <p className='bar'></p>
       </Saleitems>
 
       <Container>
@@ -382,13 +389,14 @@ const Home = (props) => {
 
       <Collaboration>
           <h2><span>COLLABORATION</span></h2>
+          <p className='bar'></p>
           <p style={{color:'#aaa'}}>T1의 다양한 콜라보레이션 제품</p>
       </Collaboration>
 
-      <Container className='mb-5'>
+      <Container className='mb-5 collab'>
         <Row>
           <Col md={4}>
-            <a href="#none" onClick={()=>{alert("이벤트가 종료되었습니다. 새로운 소식으로 찾아뵙겠습니다.")}}><img src="/img/timeflik.jpg" alt="timeflik" width={'100%'} /></a>
+            <a href="#none" onClick={()=>{alert("이벤트가 종료되었습니다. 새로운 소식으로 찾아뵙겠습니다.")}} ><img src="/img/timeflik.jpg" alt="timeflik" width={'100%'} /></a>
             <h3>T1 X TIMEFLIK</h3>
           </Col>
           <Col md={4}>

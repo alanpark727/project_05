@@ -1,0 +1,103 @@
+.detail_wrap {
+    margin: 80px auto;
+}
+
+.detail_product {
+    padding: 12px 0 0;
+    .product_img {
+        img {
+            border: 1px solid #eaeaea;
+            margin: 5%;
+        }
+    }
+    .product_info {
+        padding: 1% 7% 3% 5%;
+        .like {
+            width: 100%;
+            button {
+                display: inline-block;
+                height: 22px;
+                font-size: 12px;
+                font-weight: 600;
+                padding: 2px 8px 1px 8px;
+                outline: none;
+                color: #aaa;
+                line-height: 1em;
+                background-color: #fff;
+                border: none;
+            }
+        }
+        .product-quantity {
+            border: 1px solid #eaeaea;
+            padding: 20px 0px 5px 20px;
+            .counter {
+                display: inline-block;
+                height: 30px;
+                border: 1px solid #eaeaea;
+                border-radius: 5px;
+                margin-left: 20px;
+                span {
+                    margin-left: 10px;
+                    margin-right: 10px;
+                    line-height: 30px;
+                }
+                div {
+                    display: inline-flex;
+                    flex-direction: column;
+                    height: 30px;
+                    position: relative;
+                    top: -10px;
+                    button {
+                        width: 15px;
+                        line-height: 15px;
+                        height: 14px;
+                        font-size: 8px;
+                        text-align: center;
+                        border: none;
+                    }
+                }
+            }
+        }
+        .product-price {
+            font-size: 1.2rem;
+            font-weight: 700;
+            span {
+                font-size: 0.8rem;
+                font-weight: 400;
+            }
+        }
+    }
+}
+
+.detail_tab {
+    --bs-nav-tabs-border-radius: 0px;
+    margin-top: 50px;
+    .detail_tab_item {
+        a.active {
+            border-top: 2px solid #000;
+        }
+    }
+}
+
+.upper_btn {
+    button {
+        padding: 20px;
+        box-shadow: 3px 3px 10px #000;
+    }
+}
+
+.bottom_btn {
+    margin-top: 10px;
+    .d-grid {
+        button {
+            padding: 10px;
+            border: 1px solid #eee;
+            margin: 10px 0;
+            background-color: #fff;
+            &:hover {
+                border: 1px solid #000;
+                background-color: #fff;
+            }
+        }
+    }
+}

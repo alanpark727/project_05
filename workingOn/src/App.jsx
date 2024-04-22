@@ -56,7 +56,7 @@ function App() {
               <NavDropdown.Item>STATIONERY</NavDropdown.Item>
               <NavDropdown.Item>POSTERS</NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link onClick={()=>{navigate('/collaboration/razor')}}>COLLABORATION</Nav.Link>
+            <Nav.Link onClick={()=>{navigate('/collaboration/razer')}}>COLLABORATION</Nav.Link>
             <Nav.Link>SALE</Nav.Link>
           </Nav>
           <Nav id='user-nav'>
@@ -81,7 +81,7 @@ function App() {
         <Route path='/uniforms/detail/:id' element={<Detail newItem={uniform} />}/>
         <Route path='/login' element={<div><Login /></div>} />
         <Route path='/cart' element={<div><Cart /></div>} />
-        <Route path='/collaboration/razor' element={<div><Razor /></div>} />
+        <Route path='/collaboration/razer' element={<div><Razor /></div>} />
       </Routes>
 
       <Footer  />

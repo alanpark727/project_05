@@ -150,3 +150,28 @@ h5 {
   }
 }
 
+.bar {
+  background: #111;
+  margin: 20px auto 15px;
+  height: 2px;
+  width: 35px;
+  display: block;
+}
+.white {
+  background: #fff;
+}
+
+.collab a > img {
+  &:hover {
+    transform: scale(1.05);
+    opacity: 0.8;
+    transition: all .5s ease-in-out;
+  }
+}
+
+.chScale {
+  transform: scale(1.05);
+  transition: all .5s ease-in-out;
+}
+
+

@@ -35,7 +35,7 @@ const Login = () => {
     if(email < 0) {
         alert('이메일 형식이 아닙니다.')
         return false;
-    } else if(pwRef.current.value(/\s/) != -1) {
+    } else if(pwRef.current.value.search(/\s/) != -1) {
         alert('비밀번호는 공백 없이 입력해주세요.')
         return false;
     } else if(pwNum<0 || pwEng<0 || pwSpe<0){

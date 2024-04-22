@@ -2,6 +2,7 @@ import React from 'react'
 import { Container, Row} from 'react-bootstrap'
 import Product from '../components/Product'
 import { useParams } from 'react-router-dom'
+import '../scss/Home.scss'
 
 const Newarrival = (props) => {
     const {newItem, no, i} = props;
@@ -10,6 +11,7 @@ const Newarrival = (props) => {
   return (
     <Container className='mb-5'>
         <h2 className='text-center mt-5'>NEW ARRIVAL</h2>
+        <p className='bar'></p>
         <p className='text-center mb-5' style={{color:'#aaa'}}>T1의 신상품을 만나보세요</p>
         <Row>
             {
